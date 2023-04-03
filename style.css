@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.calender {
+    border: 2px solid black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 800;
+}
+
+.weekdays {
+    font-weight: 900;
+    padding: 0px 5px 5px 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 0 50px;
+    background-color: rgb(144, 141, 141);
+}
+
+.normaldays {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    gap: 0 50px;
+}
+
+.item1 {
+    grid-column-start: 3;
+}
+
+ul {
+    list-style: none;
+}
+
+.calender-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    transition: all 0.2s;
+}
